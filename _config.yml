@@ -20,7 +20,7 @@ author: "Gustavo Sousa"
 ###############################################
 
 navbar-links:
-  About Me: "Sobre Mim"
+  Sobre Mim: "aboutme"
   Links:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
