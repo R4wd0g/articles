@@ -1,1 +1,1 @@
-<iframe src="https://r4wd0g.github.io/resume/" height="100%" width="100%"></iframe>
+<iframe src="https://r4wd0g.github.io/resume/" allowfullscreen></iframe>
