@@ -1,1 +1,4 @@
-<iframe src="https://r4wd0g.github.io/resume/" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
+<iframe src="https://r4wd0g.github.io/resume/" 
+
+
+onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';this.style.width=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
