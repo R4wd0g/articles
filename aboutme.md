@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre Mim
-subtitle: Como sempre gostei da área tecnológica, me aperfeiçoei em cursos que tangem essa área e continuo estudando, pois nunca sabemos o suficiente.
+subtitle: Somar com pessoas que querem evoluir a cada dia. Fazer parte de projetos que visam ajudar a humanidade. 
 ---
 
 Possuo conhecimentos de informática, redes e experiências em assuntos correlatos à segurança da informação.  
