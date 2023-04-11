@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre Mim
-subtitle: Tenho o objetivo de somar com pessoas que querem evoluir a cada dia. Fazer parte de projetos que visam ajudar a humanidade. Como sempre gostei da área tecnológica, me aperfeiçoei em cursos que tangem essa área e continuo estudando, pois nunca sabemos o suficiente.
+subtitle: Como sempre gostei da área tecnológica, me aperfeiçoei em cursos que tangem essa área e continuo estudando, pois nunca sabemos o suficiente.
 ---
 
 Possuo conhecimentos de informática, redes e experiências em assuntos correlatos à segurança da informação.  
@@ -12,3 +12,6 @@ Possuo conhecimentos em Shell Bash e tenho intimidades com criação de scripts 
 Possuo conhecimentos em linguagem C, mas estou estudando para melhorar, como C#, PHP e javascript.  
 Tenho experiência com testes em ambientes de máquinas virtuais utilizando VirtualBox ou VMware ou Sandboxes.  
 Possuo ótimo conhecimento com o pacote office e caso precise criar algum script em VBA consigo me virar bem com a ajuda da web.
+
+
+Tenho o objetivo de somar com pessoas que querem evoluir a cada dia. Fazer parte de projetos que visam ajudar a humanidade.  
