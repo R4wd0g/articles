@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-04-12-Como começar a teclar.md",
+                "file": "2023-04-12-Taking cli krask.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-04-12-Como começar a teclar.md",
+                "file": "2023-04-12-Taking cli krask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-04-12-Como começar a teclar.md",
+                "file": "2023-04-12-Taking cli krask.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-04-12-Como começar a teclar.md"
+                "file": "2023-04-12-Taking cli krask.md"
               }
             }
           }
@@ -149,7 +149,7 @@
   "active": "db517b1baa583cf8",
   "lastOpenFiles": [
     "Como começar a teclar.md",
-    "2023-04-12-Como começar a teclar.md",
+    "2023-04-12-Taking cli krask.md",
     "Sem título.md"
   ]
 }
