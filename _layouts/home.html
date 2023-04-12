@@ -47,24 +47,8 @@ layout: page
       </a>
 
       <p class="post-meta">
-        <!-- {% assign date_format = site.date_format | default: "%-d %B, %Y" %} -->
-        Postado em {% assign m = page.date | date: "%-m" %}
-        {{ page.date | date: "%-d de" }}
-        {% case m %}
-          {% when '1' %}Janeiro
-          {% when '2' %}Fevereiro
-          {% when '3' %}Março
-          {% when '4' %}Abril
-          {% when '5' %}Maio
-          {% when '6' %}Junho
-          {% when '7' %}Julho
-          {% when '8' %}Agosto
-          {% when '9' %}Setembro
-          {% when '10' %}Outubro
-          {% when '11' %}Novembro
-          {% when '12' %}Dezembro
-          {% endcase %}
-        {{ page.date | date: " de %Y" }}
+        {% assign date_format = site.date_format | default: "%-d %B, %Y" %}
+        Postado em {{ post.date | date: date_format }}
       </p>
 
       {% if thumbnail != "" %}
