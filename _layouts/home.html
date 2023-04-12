@@ -64,7 +64,7 @@ layout: page
           {% when '11' %}Novembro
           {% when '12' %}Dezembro
         {% endcase %}
-        {{ post.date | date: ", %Y" }}
+        {{ post.date | date: "de %Y" }}
       </p>
 
       {% if thumbnail != "" %}
