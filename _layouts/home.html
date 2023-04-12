@@ -47,7 +47,7 @@ layout: page
       </a>
 
       <p class="post-meta">
-        <!-- {% assign date_format = site.date_format | default: "%-d %B, %Y" %} -->
+        {% assign date_format = site.date_format | default: "%-d %B, %Y" %}
         {% assign m = post.date | date: "%-m" %}
         Postado em {{ post.date | date: "%-d de" }}
         {% case m %}
