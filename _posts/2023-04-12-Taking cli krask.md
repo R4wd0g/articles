@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Como começar a teclar
+title: Taking cli krask
 subtitle: bla bla
 # gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
