@@ -6,6 +6,9 @@ cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 readtime: true
 show-avatar: false
+language: pt-BR
+# full-width: true
+# css: path/to/file.css
 tags: [books, test]
 ---
 
