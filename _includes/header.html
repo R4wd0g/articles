@@ -38,7 +38,26 @@
           {% endif %}
 
           {% if include.type == "post" %}
-            <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
+            <span class="post-meta">
+            <!-- Posted on {{ page.date | date: date_format }} -->
+            {% assign m = post.date | date: "%-m" %}
+        Postado em {{ post.date | date: "%-d de" }}
+        {% case m %}
+          {% when '1' %}Janeiro
+          {% when '2' %}Fevereiro
+          {% when '3' %}Março
+          {% when '4' %}Abril
+          {% when '5' %}Maio
+          {% when '6' %}Junho
+          {% when '7' %}Julho
+          {% when '8' %}Agosto
+          {% when '9' %}Setembro
+          {% when '10' %}Outubro
+          {% when '11' %}Novembro
+          {% when '12' %}Dezembro
+        {% endcase %}
+        {{ post.date | date: "de %Y" }}
+          </span>
             {% if page.last-updated %}
               <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
