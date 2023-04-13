@@ -2,6 +2,7 @@
 layout: page
 title: Sobre Mim
 subtitle: Somar com pessoas que querem evoluir a cada dia. Fazer parte de projetos que visam ajudar a humanidade. 
+show-avatar: false
 ---
 
 Possuo conhecimentos de informática, redes e experiências em assuntos correlatos à segurança da informação.  
