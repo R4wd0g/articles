@@ -40,8 +40,8 @@
           {% if include.type == "post" %}
             <span class="post-meta">
             <!-- Posted on {{ page.date | date: date_format }} -->
-            {% assign m = post.date | date: "%-m" %}
-        Postado em {{ post.date | date: "%-d de" }}
+            {% assign m = page.date | date: "%-m" %}
+        Postado em {{ page.date | date: "%-d de" }}
         {% case m %}
           {% when '1' %}Janeiro
           {% when '2' %}Fevereiro
@@ -56,7 +56,7 @@
           {% when '11' %}Novembro
           {% when '12' %}Dezembro
         {% endcase %}
-        {{ post.date | date: "de %Y" }}
+        {{ page.date | date: "de %Y" }}
           </span>
             {% if page.last-updated %}
               <span class="post-meta">
