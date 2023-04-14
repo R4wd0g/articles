@@ -21,7 +21,7 @@ author: "Gustavo Sousa"
 
 navbar-links:
   Sobre Mim: "aboutme"
-  Contato: "wpa.sys@hotmail.com"
+  Contato: "mailto:wpa.sys@hotmail.com"
   Links:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
