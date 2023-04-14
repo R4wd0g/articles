@@ -20,6 +20,7 @@ author: "Gustavo Sousa"
 ###############################################
 
 navbar-links:
+  Início: "https://rawarticles.me"
   Sobre Mim: "aboutme"
   Contato: "mailto:wpa.sys@hotmail.com"
   Links:
