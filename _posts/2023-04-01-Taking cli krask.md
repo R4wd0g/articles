@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
-#cover-img: /assets/img/path.jpg
-#thumbnail-img: /assets/img/thumb.png
+title: Microsoft PowerToys
+subtitle: Conhecendo a ferramenta de produtividade do windows 10 destinada a usuários um pouco mais exigentes
+thumbnail-img: https://i.imgur.com/6fl9yeQ.png
+cover-img: https://i.imgur.com/721plbC.png
 readtime: true
 show-avatar: false
 language: pt-BR
@@ -13,4 +13,7 @@ tags: [books, test]
 ---
 
 
-Salve rapeizeeee
+# Uma visão geral
+
+Micros
+
