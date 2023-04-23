@@ -20,4 +20,30 @@ Ao longo dos anos sempre acumulamos ferramentas de bolso que acabam sendo indisp
 Microsoft PowerToys é uma aposta da Microsoft de juntar as ferramentas mais essenciais que vieram ganhando força ao longo dos anos, e se provando úteis pela sua popularidade.
 Meu objetivo é lhe apresentar uma breve explicação sobre cada ferramenta que compõe a suíte do PowerToys.
 
-![legenda](https://i.imgur.com/BPg2Gm6.png){: .mx-auto.d-block :}
+Para instalar, basta procurar por "Microsoft PowerToys" na loja da Microsoft.
+
+## Tela inicial
+
+Após instalarmos, damos de cara com a tela de boas-vindas.
+
+![Tela inicial](https://i.imgur.com/BPg2Gm6.png){: .mx-auto.d-block :}
+
+## Ferramentas
+
+### Sempre Visível
+
+![](https://i.imgur.com/JPVGjYq.png){: .mx-auto.d-block :}
+
+Sabe aquele momento onde  temos que clicar toda a hora em uma janela para que ela venha sempre pra frente da tela? A proposta desta ferramenta é resolver justamente este problema.
+Escolha uma janela que você queira que sempre esteja no topo, e pressione a combinação de teclas **Win + Ctrl + T** para fixá-la.
+
+### Modo Ativo
+
+![](https://i.imgur.com/OcpKwAY.png)
+
+
+Ou também conhecido como modo cafeína para os mais chegados.
+Esta funcionalidade já existia no mundo dos aparelhos Android. Possibilita deixar a tela sempre ligada.
+Imagine um cenário onde, o computador sempre bloqueia a tela depois de uns 20 minutos. E tudo bem. Na maioria das vezes é isso que queremos.
+
+Mas pense numa ocasião hipotética onde você estaria mostrando algum conteúdo a alguém na tela do seu computador, durante vários minutos, e não deseja que a tela fique desligando toda hora. Prazer, modo cafeína ao seu dispor.
