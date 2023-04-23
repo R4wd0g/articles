@@ -39,11 +39,18 @@ Escolha uma janela que você queira que sempre esteja no topo, e pressione a com
 
 ### Modo Ativo
 
-![](https://i.imgur.com/OcpKwAY.png)
-
+![](https://i.imgur.com/OcpKwAY.png){: .mx-auto.d-block :}
 
 Ou também conhecido como modo cafeína para os mais chegados.
 Esta funcionalidade já existia no mundo dos aparelhos Android. Possibilita deixar a tela sempre ligada.
-Imagine um cenário onde, o computador sempre bloqueia a tela depois de uns 20 minutos. E tudo bem. Na maioria das vezes é isso que queremos.
+Imagine um cenário onde, o computador sempre bloqueia a tela após uns 20 minutos. E tudo bem. Na maioria das vezes é isso que queremos.
 
 Mas pense numa ocasião hipotética onde você estaria mostrando algum conteúdo a alguém na tela do seu computador, durante vários minutos, e não deseja que a tela fique desligando toda hora. Prazer, modo cafeína ao seu dispor.
+
+Para ativar, clique com o botão direito no símbolo da xícara de café localizado no tray (bandeja do sistema na barra de tarefas)
+
+![](https://i.imgur.com/8SUEVsm.png){: .mx-auto.d-block :}
+
+E então, escolha uma opção (preferivelmente <font color="#de7802">Keep awake indefinitely</font>)
+
+![](https://i.imgur.com/00mK886.png){: .mx-auto.d-block :}
