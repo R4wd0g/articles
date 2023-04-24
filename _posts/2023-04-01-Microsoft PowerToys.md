@@ -74,3 +74,10 @@ Ao clicar com o botão esquerdo do mouse, esta janela abrirá contendo os códig
 
 ![](https://i.imgur.com/IkUgQQq.png){: .mx-auto.d-block :}
 
+Quer navegar na internet quanto utiliza um editor de texto ao lado de um arquivo PDF + uma calculadora? Para os que curtem visualizar todas as janelas importantes enquanto trabalha, o FancyZones é uma ótima ferramenta.
+
+![](https://i.imgur.com/CzhkTo3.png){: .mx-auto.d-block :}
+
+Ao entrar com a combinação **Win + Shift + '** esta janela é apresentada, mostrando as disposições disponíveis das janelas. Basta clicar em uma delas para experimentar a visualização.
+
+![](https://i.imgur.com/jioxTrT.png)
