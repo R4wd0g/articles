@@ -67,4 +67,4 @@ Faça a combinação de teclas **Win + Shift + C** para que o seletor de cor apa
 
 Ao clicar com o botão esquerdo do mouse, esta janela abrirá contendo os códigos da cor que você escolheu (HEX, RGB e HSL). O interessante é que esta janela mantém um histórico das cores anteriores que você já capturou anteriormente.
 
-![](https://i.imgur.com/aL6Ie7a.png){: .mx-auto.d-block :}
+![](https://i.imgur.com/aL6Ie7a.png):"teste"{: .mx-auto.d-block :}
