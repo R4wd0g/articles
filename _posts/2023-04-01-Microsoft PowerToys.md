@@ -54,3 +54,17 @@ Para ativar, clique com o botão direito no símbolo da xícara de café localiz
 E então, escolha uma opção (preferivelmente <font color="#de7802">Keep awake indefinitely</font>)
 
 ![](https://i.imgur.com/00mK886.png){: .mx-auto.d-block :}
+
+### Seletor de Cor
+
+![](https://i.imgur.com/SbO3myf.png){: .mx-auto.d-block :}
+
+A ferramenta de seleção de cor nos ajuda a identificar uma cor específica que está visível na tela. Às vezes é difícil dizer com precisão qual seria o código exato de uma cor verde que está aparecendo na tela. Esta ferramenta vem para resolver este problema.
+
+Faça a combinação de teclas **Win + Shift + C** para que o seletor de cor apareça e vá passando o cursor em cima de qualquer superfície na tela como mostra a imagem.
+
+![Balão de seleção de cor (color picker)](https://i.imgur.com/dLUFpTU.png){: .mx-auto.d-block :}
+
+Ao clicar com o botão esquerdo do mouse, esta janela abrirá contendo os códigos da cor que você escolheu (HEX, RGB e HSL). O interessante é que esta janela mantém um histórico das cores anteriores que você já capturou anteriormente.
+
+![](https://i.imgur.com/aL6Ie7a.png){: .mx-auto.d-block :}
