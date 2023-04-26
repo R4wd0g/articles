@@ -12,6 +12,7 @@ language: pt-BR
 # full-width: true
 tags: [books, test]
 ---
+[[__TOC__]]
 
 # Uma visão geral
 
