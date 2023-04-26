@@ -20,7 +20,7 @@ Ao longo dos anos sempre acumulamos ferramentas de bolso que acabam sendo indisp
 Microsoft PowerToys é uma aposta da Microsoft de juntar as ferramentas mais essenciais que vieram ganhando força ao longo dos anos, e se provando úteis pela sua popularidade.
 Meu objetivo é lhe apresentar uma breve explicação sobre cada ferramenta que compõe a suíte do PowerToys.
 
-Para instalar, basta procurar por "Microsoft PowerToys" na loja da Microsoft.
+Para instalar, basta procurar por "Microsoft PowerToys" na loja da Microsoft, ou através do [link](https://apps.microsoft.com/store/detail/microsoft-powertoys/XP89DCGQ3K6VLD).
 
 ## Tela inicial
 
