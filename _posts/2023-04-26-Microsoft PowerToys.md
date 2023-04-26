@@ -13,31 +13,6 @@ language: pt-BR
 tags: [books, test]
 ---
 
-***Índice***
-
-1. [[#Tela inicial|Tela inicial]]
-1. [[#Ferramentas|Ferramentas]]
-	1. [[#Ferramentas#Sempre Visível|Sempre Visível]]
-	1. [[#Ferramentas#Modo Ativo|Modo Ativo]]
-	1. [[#Ferramentas#Seletor de Cor|Seletor de Cor]]
-	1. [[#Ferramentas#FancyZones|FancyZones]]
-	1. [[#Ferramentas#File Locksmith|File Locksmith]]
-	1. [[#Ferramentas#Complementos do Explorador de Arquivos|Complementos do Explorador de Arquivos]]
-	1. [[#Ferramentas#Editor de arquivos Hosts|Editor de arquivos Hosts]]
-	1. [[#Ferramentas#Redimensionador de Imagem|Redimensionador de Imagem]]
-	1. [[#Ferramentas#Gerenciador de Teclado|Gerenciador de Teclado]]
-	1. [[#Ferramentas#Utilitários do mouse|Utilitários do mouse]]
-	1. [[#Ferramentas#Colar Como Texto Sem Formatação|Colar Como Texto Sem Formatação]]
-	1. [[#Ferramentas#PowerRename|PowerRename]]
-	1. [[#Ferramentas#PowerToys Run|PowerToys Run]]
-	1. [[#Ferramentas#Acento Rápido|Acento Rápido]]
-	1. [[#Ferramentas#Visualização do Registro|Visualização do Registro]]
-	1. [[#Ferramentas#Screen Ruler|Screen Ruler]]
-	1. [[#Ferramentas#Guia de atalhos|Guia de atalhos]]
-	1. [[#Ferramentas#Extrator de texto|Extrator de texto]]
-	1. [[#Ferramentas#Video Conferência Mudo|Video Conferência Mudo]]
-1. [[#Considerações finais|Considerações finais]]
-
 # Uma visão geral
 
 Ao longo dos anos sempre acumulamos ferramentas de bolso que acabam sendo indispensáveis no nosso dia a dia enquanto trabalhamos ou realizamos tarefas no computador. Seja para tirar uma simples "Captura de tela" ou para realizar ações em lote afim de ganharmos tempo ao realizar tarefas repetitivas.
