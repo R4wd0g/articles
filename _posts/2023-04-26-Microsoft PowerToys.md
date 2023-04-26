@@ -12,8 +12,7 @@ language: pt-BR
 # full-width: true
 tags: [books, test]
 ---
-[[__TOC__]]
-
+{{toc}}
 # Uma visão geral
 
 Ao longo dos anos sempre acumulamos ferramentas de bolso que acabam sendo indispensáveis no nosso dia a dia enquanto trabalhamos ou realizamos tarefas no computador. Seja para tirar uma simples "Captura de tela" ou para realizar ações em lote afim de ganharmos tempo ao realizar tarefas repetitivas.
