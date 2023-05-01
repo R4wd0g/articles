@@ -1,1 +1,1 @@
-Sitemap: /rawarticles.me/articles/sitemap.xml
+Sitemap: /sitemap.xml
