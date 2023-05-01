@@ -14,7 +14,7 @@ language: pt-BR
 # full-width: true
 tags: [books, test]
 ---
-{{ content | toc }}
+
 
 # Uma visão geral
 
