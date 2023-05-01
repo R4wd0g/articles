@@ -1,4 +1,0 @@
----
-show-avatar: false
----
-<iframe src="https://r4wd0g.github.io/resume/" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';" style="width: 100%; border: none;"></iframe>
