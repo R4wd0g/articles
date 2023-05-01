@@ -13,7 +13,6 @@ language: pt-BR
 # css: path/to/file.css
 # full-width: true
 tags: [books, test]
-#test
 ---
 
 
