@@ -7,7 +7,7 @@ cover-img: https://i.imgur.com/721plbC.png
 readtime: true
 show-avatar: false
 toc: true
-#last-updated: "01/05/23"
+last-updated: "01/05/23"
 language: pt-BR
 # full-width: true
 # css: path/to/file.css
