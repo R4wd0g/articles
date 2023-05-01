@@ -7,7 +7,7 @@
     
     <description>rss-feed</description>
     
-    <link></link>
+    <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
     
