@@ -6,6 +6,7 @@ thumbnail-img: https://i.imgur.com/6fl9yeQ.png
 cover-img: https://i.imgur.com/721plbC.png
 readtime: true
 show-avatar: false
+toc: true
 language: pt-BR
 # full-width: true
 # css: path/to/file.css
