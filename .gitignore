@@ -1,6 +1,6 @@
 *
-!.gitignore
-!_site/*
+#!.gitignore
+!_site/
 
 
 
