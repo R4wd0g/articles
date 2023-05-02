@@ -7,3 +7,15 @@
   border: 1px solid #e8e8e8;
   border-radius: 20px;
 }
+
+
+[class=" container-md "] {
+   float: right;
+}
+
+/* footer  */
+
+footer  {
+  display: inline-block;
+  width: 100%;
+}
