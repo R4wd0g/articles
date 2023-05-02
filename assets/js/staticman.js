@@ -1,12 +1,17 @@
+---
+layout: null
+---
+
 (function ($) {
   $('#new_comment').submit(function () {
     const form = this;
 
     $(form).addClass('disabled');
 
-    const endpoint = '';
-    const repository = '';
-    const branch = '';
+    {% assign sm = site.staticman -%}
+    const endpoint = '{{ sm.endpoint }}';
+    const repository = '{{ sm.repository }}';
+    const branch = '{{ sm.branch }}';
     const url = endpoint + repository + '/' + branch + '/comments';
     const data = $(this).serialize();
 
