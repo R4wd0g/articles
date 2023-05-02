@@ -11,6 +11,8 @@
 #table-of-contents{
   float: right;
   margin: 0 108px 0px -191px;
+  z-index: 1;
+  position: relative;
 }
 
 @media screen and (max-width: 1000px){
