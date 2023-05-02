@@ -1,0 +1,33 @@
+/* Table of contents  */
+.section-nav {
+  display: inline-block;
+  background-color: #fff;
+  margin: 0px 0 20px 0;
+  padding: 10px 30px;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+}
+
+#table-of-contents{
+  float: right;
+  margin: 0 108px 0px -191px;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px){
+  #table-of-contents{
+  float: right;
+  margin: 0 20px 0px 20px;
+}
+}
+
+[class=" container-md "] {
+   float: right;
+}
+
+/* footer  */
+footer  {
+  display: inline-block;
+  width: 100%;
+}

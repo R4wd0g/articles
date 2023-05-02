@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+<head>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Microsoft PowerToys</title>
+
+  
+  <meta name="author" content="Gustavo Sousa">
+  
+
+  <meta name="description" content="Conhecendo a ferramenta de produtividade do windows 10 destinada a usuários um pouco mais exigentes">
+
+  
+
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RawArticles" href="/articles/feed.xml">
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/articles/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/articles/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+    
+      <link rel="stylesheet" href="/articles/assets/css/custom.css">
+    
+  
+
+  
+
+  
+  <meta property="og:site_name" content="RawArticles">
+  <meta property="og:title" content="Microsoft PowerToys">
+  <meta property="og:description" content="Conhecendo a ferramenta de produtividade do windows 10 destinada a usuários um pouco mais exigentes">
+
+  
+  <meta property="og:image" content="https://i.imgur.com/721plbC.png">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Gustavo Sousa">
+  <meta property="og:article:published_time" content="2023-04-26T00:00:00-03:00">
+  <meta property="og:url" content="/articles/2023-04-26-Microsoft-PowerToys/">
+  <link rel="canonical" href="/articles/2023-04-26-Microsoft-PowerToys/">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Microsoft PowerToys">
+  <meta property="twitter:description" content="Conhecendo a ferramenta de produtividade do windows 10 destinada a usuários um pouco mais exigentes">
+
+  
+  <meta name="twitter:image" content="https://i.imgur.com/721plbC.png">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand navbar-brand-logo" href="/articles"><img alt="RawArticles Logo" src="/articles/assets/img/default-2.svg"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://rawarticles.me">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/articles/aboutme">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:wpa.sys@hotmail.com">Contato</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+                  <a class="dropdown-item" href="https://www.markdowntutorial.com/">Learn markdown</a>
+            </div>
+          </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "Microsoft PowerToys", \
+          "category" : "bookstest", \
+          "url"      : "./articles/2023-04-26-Microsoft-PowerToys/", \
+          "date"     : "April 26, 2023" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "Sobre Mim", \
+          "category" : "page", \
+          "url"      : "./articles/aboutme/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "RawArticles", \
+          "category" : "page", \
+          "url"      : "./articles/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "", \
+          "category" : "page", \
+          "url"      : "./articles/resume/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Tag Index", \
+          "category" : "page", \
+          "url"      : "./articles/tags/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+  <div id="header-big-imgs" data-num-img=1
+    
+    
+    
+      
+      data-img-src-1="https://i.imgur.com/721plbC.png"
+    
+    
+    
+  ></div>
+
+
+<header class="header-section has-img">
+
+<div class="big-img intro-header">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>Microsoft PowerToys</h1>
+          
+            
+              <h2 class="post-subheading">Conhecendo a ferramenta de produtividade do windows 10 destinada a usuários um pouco mais exigentes</h2>
+            
+          
+
+          
+            <span class="post-meta">
+            <!-- Posted on April 26, 2023 -->
+            
+        Postado em 26 de
+        Abril
+          
+        de 2023
+          </span>
+            
+              <span class="post-meta">
+                <span class="d-none d-md-inline middot">&middot;</span>
+                <!-- Last updated May 1, 2023 -->
+
+                 
+        Atualizado em 1 de
+        Maio
+          
+        de 2023
+              </span>
+            
+            
+              <!--- "ReadTime on GitHub Jekyll" (c) 2020 Ruby Griffith Ramirez, MIT License -->
+
+
+
+
+
+
+  
+  <span class="post-meta"><span class="d-none d-md-inline middot">&middot;</span> 11 minutos de leitura</span>
+
+
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class='img-desc'></span>
+</div>
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>Microsoft PowerToys</h1>
+          
+            
+              <h2 class="post-subheading">Conhecendo a ferramenta de produtividade do windows 10 destinada a usuários um pouco mais exigentes</h2>
+            
+          
+
+          
+            <span class="post-meta">Posted on April 26, 2023</span>
+            
+              <span class="post-meta">
+                <span class="d-none d-md-inline middot">&middot;</span>
+                Last updated May 1, 2023
+              </span>
+            
+            
+              <!--- "ReadTime on GitHub Jekyll" (c) 2020 Ruby Griffith Ramirez, MIT License -->
+
+
+
+
+
+
+  
+  <span class="post-meta"><span class="d-none d-md-inline middot">&middot;</span> 11 minutos de leitura</span>
+
+
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+      <div id="table-of-contents">
+        <p style="margin: 0;"><b><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#205;ndice</i></b></p>
+          <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#uma-visão-geral">Uma visão geral</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#tela-inicial">Tela inicial</a></li>
+<li class="toc-entry toc-h2"><a href="#ferramentas">Ferramentas</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#sempre-visível">Sempre Visível</a></li>
+<li class="toc-entry toc-h3"><a href="#modo-ativo">Modo Ativo</a></li>
+<li class="toc-entry toc-h3"><a href="#seletor-de-cor">Seletor de Cor</a></li>
+<li class="toc-entry toc-h3"><a href="#fancyzones">FancyZones</a></li>
+<li class="toc-entry toc-h3"><a href="#file-locksmith">File Locksmith</a></li>
+<li class="toc-entry toc-h3"><a href="#complementos-do-explorador-de-arquivos">Complementos do Explorador de Arquivos</a></li>
+<li class="toc-entry toc-h3"><a href="#editor-de-arquivos-hosts">Editor de arquivos Hosts</a></li>
+<li class="toc-entry toc-h3"><a href="#redimensionador-de-imagem">Redimensionador de Imagem</a></li>
+<li class="toc-entry toc-h3"><a href="#gerenciador-de-teclado">Gerenciador de Teclado</a></li>
+<li class="toc-entry toc-h3"><a href="#utilitários-do-mouse">Utilitários do mouse</a></li>
+<li class="toc-entry toc-h3"><a href="#colar-como-texto-sem-formatação">Colar Como Texto Sem Formatação</a></li>
+<li class="toc-entry toc-h3"><a href="#powerrename">PowerRename</a></li>
+<li class="toc-entry toc-h3"><a href="#powertoys-run">PowerToys Run</a></li>
+<li class="toc-entry toc-h3"><a href="#acento-rápido">Acento Rápido</a></li>
+<li class="toc-entry toc-h3"><a href="#visualização-do-registro">Visualização do Registro</a></li>
+<li class="toc-entry toc-h3"><a href="#screen-ruler">Screen Ruler</a></li>
+<li class="toc-entry toc-h3"><a href="#guia-de-atalhos">Guia de atalhos</a></li>
+<li class="toc-entry toc-h3"><a href="#extrator-de-texto">Extrator de texto</a></li>
+<li class="toc-entry toc-h3"><a href="#video-conferência-mudo">Video Conferência Mudo</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#considerações-finais">Considerações finais</a></li>
+</ul>
+</li>
+</ul>
+      </div>
+
+<div class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+
+      
+
+      
+      
+      <article role="main" class="blog-post">
+        <h1 id="uma-visão-geral">Uma visão geral</h1>
+
+<p>Ao longo dos anos sempre acumulamos ferramentas de bolso que acabam sendo indispensáveis no nosso dia a dia enquanto trabalhamos ou realizamos tarefas no computador. Seja para tirar uma simples “Captura de tela” ou para realizar ações em lote afim de ganharmos tempo ao realizar tarefas repetitivas.
+Microsoft PowerToys é uma aposta da Microsoft de juntar as ferramentas mais essenciais que vieram ganhando força ao longo dos anos, e se provando úteis pela sua popularidade.
+Meu objetivo é lhe apresentar uma breve explicação sobre cada ferramenta que compõe a suíte do PowerToys.</p>
+
+<p>Para instalar, basta procurar por “Microsoft PowerToys” na loja da Microsoft, ou através do <a href="https://apps.microsoft.com/store/detail/microsoft-powertoys/XP89DCGQ3K6VLD">link</a>.</p>
+
+<h2 id="tela-inicial">Tela inicial</h2>
+
+<p>Após instalarmos, damos de cara com a tela de boas-vindas.</p>
+
+<p><img src="https://i.imgur.com/BPg2Gm6.png" alt="Tela inicial" class="mx-auto d-block" /></p>
+
+<h2 id="ferramentas">Ferramentas</h2>
+
+<h3 id="sempre-visível">Sempre Visível</h3>
+
+<p><img src="https://i.imgur.com/JPVGjYq.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Sabe aquele momento onde  temos que clicar toda a hora em uma janela para que ela venha sempre pra frente da tela? A proposta desta ferramenta é resolver justamente este problema.
+Escolha uma janela que você queira que sempre esteja no topo, e pressione a combinação de teclas <strong>Win + Ctrl + T</strong> para fixá-la.</p>
+
+<h3 id="modo-ativo">Modo Ativo</h3>
+
+<p><img src="https://i.imgur.com/OcpKwAY.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Ou também conhecido como modo cafeína para os mais chegados.
+Esta funcionalidade já existia no mundo dos aparelhos Android. Possibilita deixar a tela sempre ligada.
+Imagine um cenário onde, o computador sempre bloqueia a tela após uns 20 minutos. E tudo bem. Na maioria das vezes é isso que queremos.</p>
+
+<p>Mas pense numa ocasião hipotética onde você estaria mostrando algum conteúdo a alguém na tela do seu computador, durante vários minutos, e não deseja que a tela fique desligando toda hora. Prazer, modo cafeína ao seu dispor.</p>
+
+<p>Para ativar, clique com o botão direito no símbolo da xícara de café localizado no tray (bandeja do sistema na barra de tarefas)</p>
+
+<p><img src="https://i.imgur.com/8SUEVsm.png" alt="" class="mx-auto d-block" /></p>
+
+<p>E então, escolha uma opção (preferivelmente <font color="#de7802">Keep awake indefinitely</font>)</p>
+
+<p><img src="https://i.imgur.com/00mK886.png" alt="" class="mx-auto d-block" /></p>
+
+<h3 id="seletor-de-cor">Seletor de Cor</h3>
+
+<p><img src="https://i.imgur.com/SbO3myf.png" alt="" class="mx-auto d-block" /></p>
+
+<p>A ferramenta de seleção de cor nos ajuda a identificar uma cor específica que está visível na tela. Às vezes é difícil dizer com precisão qual seria o código exato de uma cor verde que está aparecendo na tela. Esta ferramenta vem para resolver este problema.</p>
+
+<p>Faça a combinação de teclas <strong>Win + Shift + C</strong> para que o seletor de cor apareça e vá passando o cursor em cima de qualquer superfície na tela como mostra a imagem.</p>
+
+<p><img src="https://i.imgur.com/dLUFpTU.png" alt="Balão de seleção de cor (color picker)" class="mx-auto d-block" /></p>
+
+<p>Ao clicar com o botão esquerdo do mouse, esta janela abrirá contendo os códigos da cor que você escolheu (HEX, RGB e HSL). O interessante é que esta janela mantém um histórico das cores anteriores que você já capturou anteriormente.</p>
+
+<p><img src="https://i.imgur.com/aL6Ie7a.png" alt="" class="mx-auto d-block" /></p>
+
+<h3 id="fancyzones">FancyZones</h3>
+
+<p><img src="https://i.imgur.com/IkUgQQq.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Quer navegar na internet quanto utiliza um editor de texto ao lado de um arquivo PDF + uma calculadora? Para os que curtem visualizar todas as janelas importantes enquanto trabalha, o FancyZones é uma ótima ferramenta.</p>
+
+<p><img src="https://i.imgur.com/CzhkTo3.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Ao entrar com a combinação <strong>Win + Shift + ‘</strong> esta janela é apresentada, mostrando as disposições disponíveis das janelas. Basta clicar em uma delas para experimentar a visualização.</p>
+
+<p><img src="https://i.imgur.com/jioxTrT.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Após clicar em <strong>Criar layout</strong> você poderá organizar as janelas da sua maneira.</p>
+
+<p><img src="https://i.imgur.com/DmXCwp2.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Após clicar em <strong>Salvar e aplicar</strong>, segure a tecla <strong>Shift</strong> enquanto move qualquer janela. Ela vai se adaptar a um dos layouts que você havia escolhido anteriormente.</p>
+
+<h3 id="file-locksmith">File Locksmith</h3>
+
+<p><img src="https://i.imgur.com/WdSHDyz.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Esta ferramenta é uma das estrelas dessa suíte.
+Você já se viu em uma situação onde simplesmente não conseguia excluir um arquivo de jeito nenhum? Daí ao tentar excluir, uma mensagem é mostrada dizendo que o arquivo está sendo utilizado por algum programa. Mas você se pergunta: que programa é esse?</p>
+
+<p>Utilizando o <strong>File Locksmith</strong> conseguimos saber qual é o programa ou processo que está impedindo que o arquivo seja excluído.</p>
+
+<p><img src="https://i.imgur.com/3ZhNyG1.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Uma alternativa ao Locksmith da Microsoft é um programa bem conhecido, o <a href="https://www.iobit.com/pt/iobit-unlocker.php">Iobit Unlocker</a>, que desempenha esta tarefa de forma impecável e veio na vanguarda deste tipo de solução.</p>
+
+<h3 id="complementos-do-explorador-de-arquivos">Complementos do Explorador de Arquivos</h3>
+
+<p><img src="https://i.imgur.com/itErK1Q.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Esta ferramenta melhora a pré-visualização dos arquivos no explorador de arquivos do Windows (Windows Explorer).
+Ao navegar por uma pasta qualquer, contendo imagens, por exemplo, faça a combinação de teclas <strong>Alt + P</strong>. Uma divisão abrirá a direita. Esta é a janela de pré-visualização:</p>
+
+<p><img src="https://i.imgur.com/u8zgfHu.png" alt="" class="mx-auto d-block" /></p>
+
+<p>A pré-visualização está disponível para a maioria dos formatos conhecidos, como JPG,PNG,PDF,SVG,MD, entre outros.</p>
+
+<h3 id="editor-de-arquivos-hosts">Editor de arquivos Hosts</h3>
+
+<p><img src="https://i.imgur.com/t6qPRnx.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Finalmente a Microsoft criou uma forma facilitada para editarmos o arquivo hosts do sistema. Este arquivo contém regras de rotas para tráfego de rede, e é muito utilizado entre profissionais de TI.</p>
+
+<p>Para abrir, basta clicar em <strong>Iniciar o Editor de Arquivos de Hosts</strong>. Lembrando que ainda é necessário ter privilégios de administrador para fazer alterações no arquivo.</p>
+
+<h3 id="redimensionador-de-imagem">Redimensionador de Imagem</h3>
+
+<p><img src="https://i.imgur.com/Z7qTnzK.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Outra ferramenta de suma importância que a Microsoft, enfim, resolveu incluir na suíte PowerToys.
+O Redimensionador de Imagem agiliza tarefas onde precisamos alterar o tamanho de várias imagens de uma só vez, poupando nosso precioso tempo. Imagine um cenário onde teríamos que redimensionar 100 imagens contidas em uma pasta para que elas ocupem menos espaço em disco ou na sua nuvem do Drive, por exemplo.</p>
+
+<p>Você pode encontrar a função diretamente no menu de contexto, ao selecionar várias imagens e clicar com o botão direito do mouse.</p>
+
+<p><img src="https://i.imgur.com/xyks69l.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Na tela seguinte, basta escolher um tamanho para que todas as imagens seja redimensionada. Também é possível escolher um tamanho personalizado.</p>
+
+<p><img src="https://i.imgur.com/6etxO0T.png" alt="" class="mx-auto d-block" /></p>
+
+<h3 id="gerenciador-de-teclado">Gerenciador de Teclado</h3>
+
+<p><img src="https://i.imgur.com/KPd9EUL.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Esta ferramenta permite mapearmos qualquer tecla do teclado para realizar qualquer função específica, ou que ela se comporte como se tivéssemos teclado em outra tecla.
+Por exemplo, conseguimos trocar a tecla <strong>Alt</strong> para <strong>Win</strong> e vice-versa.</p>
+
+<p>Ao clicar em <strong>Remapear uma tecla</strong>, podemos escolher qualquer tecla para se comportar de acordo com o que quisermos, como mostra a imagem abaixo:</p>
+
+<p><img src="https://i.imgur.com/7csGgB5.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Também é possível mapear um atalho para chamar um programa, clicando na opção “Remapear um atalho”.</p>
+
+<h3 id="utilitários-do-mouse">Utilitários do mouse</h3>
+
+<p><img src="https://i.imgur.com/GWJD1Wz.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Esta opção habilita vários recursos interessantes para fazer com o mouse, como, por exemplo, caso queira localizar o ponteiro do cursor na tela. Uma boa justificativa para esta solução seria caso um apresentador estivesse mostrando seus slides em um telão, e de repente queira destacar o mouse para se comunicar melhor com o público que está assistindo. Para ativar, pressione a tecla <strong>Ctrl</strong> duas vezes seguidas.</p>
+
+<p>Aproveite para descobrir as outras funções por si mesmo(a).</p>
+
+<h3 id="colar-como-texto-sem-formatação">Colar Como Texto Sem Formatação</h3>
+
+<p><img src="https://i.imgur.com/ugZIXIh.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Como o próprio nome sugere, permite colar um texto que foi copiado cheio de “gueri gueri” em um editor de texto, como o Word, por exemplo.</p>
+
+<p><img src="https://i.imgur.com/PHwiyFr.png" alt="exemplo de formatação" class="mx-auto d-block" /></p>
+
+<p>exemplo:
+Copiando um texto com cores e estilo:</p>
+
+<p><img src="https://i.imgur.com/hohzoJm.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Colando o texto no Word, utilizando as combinações <strong>Ctrl + Alt + V</strong>.</p>
+
+<p><img src="https://i.imgur.com/EJ3Y6xO.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Texto colado sem formatação:</p>
+
+<p><img src="https://i.imgur.com/5DOMouY.png" alt="" class="mx-auto d-block" /></p>
+
+<h3 id="powerrename">PowerRename</h3>
+
+<p><img src="https://i.imgur.com/4l9w2VX.png" alt="" class="mx-auto d-block" /></p>
+
+<p>PowerRename permite renomear vários arquivos de uma só vez.
+Ele está disponível a partir do menu de contexto. Então, para acessá-lo, basta selecionar todos os arquivos que deseja renomear em lote, clique com o botão direito do mouse nos arquivos selecionados, depois em <strong>Renomear Avançado</strong>.</p>
+
+<p><img src="https://i.imgur.com/TlPfbBp.png" alt="" class="mx-auto d-block" />
+Esta é a tela do <strong>PowerRename</strong>. As funções é de fácil entendimento. No campo <strong>Pesquisa por</strong> você vai digitar algum nome que queira substituir. Caso queira renomear tudo com um novo nome sequencial, prossiga com o passo a seguir:</p>
+
+<p><img src="https://i.imgur.com/tcZE2Tg.png" alt="" class="mx-auto d-block" /></p>
+
+<p>A ferramenta aceita o uso de expressões regulares, onde traz inteligência para filtrarmos os nomes.
+Marque a caixa <strong>Usar expressões regulares</strong> e depois digite o símbolo regex <font color="#de7802">.*</font> , digite, por exemplo, <font color="#de7802">Foto</font> como mostra a imagem e depois na opção “ <strong>Aplicar a</strong> “ escolha <font color="#de7802">Filename only</font>:</p>
+
+<p><img src="https://i.imgur.com/LiZjw1N.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Agora clique neste botão que tem a função de <strong>Enumerar itens</strong>:</p>
+
+<p><img src="https://i.imgur.com/u4f3rmg.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Note como ficarão nossas fotos após renomearmos, como está descrito na guia <strong>Renomeado</strong>:</p>
+
+<p><img src="https://i.imgur.com/zJGZVVy.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Basta clicar em aplicar e.. Pliin!</p>
+
+<p><img src="https://i.imgur.com/X4BmEcf.png" alt="" class="mx-auto d-block" /></p>
+
+<h3 id="powertoys-run">PowerToys Run</h3>
+
+<p><img src="https://i.imgur.com/NH8YHCR.png" alt="" class="mx-auto d-block" /></p>
+
+<p>ahh…
+Esse daqui até os adeptos do Mac ficarão de boca aberta com essa ferramenta. A Microsoft simplesmente trouxe um equivalente do <strong>Spotlight</strong> do MacOS para o Windows, e utilizando o mesmo atalho para chamá-lo: no Windows <strong>Alt + Barra de espaço</strong> (no Mac, Command + Espaço).
+Esta “Coincidência” sendo estranha ou não, essa funcionalidade veio para contribuir mais ainda com a produtividade do usuário quando o mesmo quer procurar um programa qualquer, sem ter que abrir o menu iniciar, que, muita das vezes, ainda é um tanto lento, pois processa várias coisas quando você o abre, como, por exemplo, o Clima, menu de programas, pesquisa da Cortana, e mais outros ícones.</p>
+
+<p><img src="https://i.imgur.com/Yj1Vvg6.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Assim que você faz a combinação de teclas, como dito acima, é mostrada uma barra de pesquisa minimalista. Dessa forma, não é preciso ter que abrir o menu iniciar para pesquisar, por exemplo, <strong>bloco de notas</strong>, sendo ele um programa super leve, que não vale o esforço de ter que abrir o menu iniciar apenas para abrí-lo.
+Enquanto você vai digitando, ele te mostra em tempo real os resultados da busca:</p>
+
+<p><img src="https://i.imgur.com/SUMGNun.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Recomendo fortemente o uso desta ferramenta em seu dia a dia de trabalho, pois, se já era bom no Mac, no Windows parece ter vindo para ficar.</p>
+
+<h3 id="acento-rápido">Acento Rápido</h3>
+
+<p><img src="https://i.imgur.com/FofSFdi.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Esta ferramenta é interessante. Você já trabalhou com um teclado com layout padrão americano, mas teve que continuar escrevendo em português, ou vice-versa?
+<strong>Acento Rápido</strong> tem a proposta de integrar melhor o layout de diferentes tipos de teclados, de modo que, quando você precisar acentuar alguma letra, utilize um comando único para as opções de acentuação aparecer.
+Funciona da seguinte forma:</p>
+
+<p>Primeiro, habilite a função:</p>
+
+<p><img src="https://i.imgur.com/kFROkx3.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Agora, enquanto você vai digitando e estiver em uma letra que seja passível de acentuação, basta segurar esta <strong>letra + barra de espaço várias vezes</strong> para que a janela flutuante do seletor de acentuação apareça.
+Note que existe bastante opções de acentuação, pois esta solução visa abranger um máximo número de idiomas.</p>
+
+<p><img src="https://i.imgur.com/6Y7WgYV.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Quando o seletor estiver em cima de, por exemplo, <font color="#de7802">ã</font> solte todas as teclas.
+Esta ferramenta é baseada na <a href="https://github.com/damienleroy/PowerAccent">Damien Leroy’s PowerAccent</a></p>
+
+<h3 id="visualização-do-registro">Visualização do Registro</h3>
+
+<p><img src="https://i.imgur.com/XOKHTLv.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Mais uma ferramenta que vem para facilitar o clássico.
+É comum que usuários mais íntimos com o Windows precise consultar ou alterar o registro de modo a definir o comportamento do sistema. Com o <strong>Registry Preview</strong> nada mais é que um utilitário visando facilitar o modo que você usava para acessar o registro do Windows.</p>
+
+<p><img src="https://i.imgur.com/LmiVf5e.png" alt="" class="mx-auto d-block" /></p>
+
+<h3 id="screen-ruler">Screen Ruler</h3>
+
+<p><img src="https://i.imgur.com/tlFCJBV.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Quem nunca precisou medir algo enquanto estava de frente para a tela do computador, mas não tinha régua, e daí acabava usando qualquer coisa que via pela frente encostado na tela para improvisar. Brincadeiras a parte, esta ferramenta serve para sabermos quantos pixels uma imagem avulsa tem, ou qualquer objeto flutuante na tela.
+<strong>Screen Ruler</strong> mostrará um menu que permitirá a você selecionar áreas na tela. Para ativar, faça a combinação de teclas <strong>Win + Shift + M</strong> e clique no primeiro ícone. Depois é só clicar e arrastar.</p>
+
+<p><img src="https://i.imgur.com/awJrtjw.png" alt="" class="mx-auto d-block" /></p>
+
+<h3 id="guia-de-atalhos">Guia de atalhos</h3>
+
+<p><img src="https://i.imgur.com/TiKNpSV.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Eu sei que tem aquele momento que te dá um branco e você esquece de alguns atalhos do Windows. Mas não se preocupe, com o <strong>Guia de atalhos</strong> dá pra dar uma lembrada de leve em alguns atalhos mais comuns do sistema operacional.
+Para visualizar, basta entrar com a combinação de teclas <strong>Win + Shift + ;</strong> (ou ao invés do ponto e vírgula “ <font color="#ff0000">;</font> “ tentar a tecla barra “ <font color="#ff0000">/</font> “).</p>
+
+<p>A figura abaixo ilustra como deve aparecer:</p>
+
+<p><img src="https://i.imgur.com/3YQ7D2B.png" alt="" class="mx-auto d-block" /></p>
+
+<h3 id="extrator-de-texto">Extrator de texto</h3>
+
+<p><img src="https://i.imgur.com/B27uj5M.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Muitos usuários já utilizavam softwares alternativos para realizar esta tarefa, mas finalmente a Microsoft trouxe esta funcionalidade para o Windows 10.
+Trata-se de um leitor de uma área de texto na tela, que consegue reconhecer o que está escrito, e copia este texto direto para a área de transferência.
+Confuso? Permita-me mostrar:</p>
+
+<p>Digamos que você esteja vendo uma imagem que contém um texto, e obviamente não consegues dar um <strong>Ctrl + C</strong> pois se trata de um texto em uma foto. Então, como você leu o RawArticles, vai ficar tranquilo(a) e conseguir ter o texto copiado 😄 :</p>
+
+<p>Vejamos este exemplo onde tentamos copiar este texto de uma logo:</p>
+
+<p>Entre com a combinação de teclas <strong>Win + Shift + T</strong>.
+Selecione toda a área de texto de modo que fique dentro do quadrado da seleção e em seguida solte o botão do mouse.</p>
+
+<p><img src="https://i.imgur.com/8r1wIJy.png" alt="" class="mx-auto d-block" /></p>
+
+<p>A palavra <strong>Facebook</strong> será enviada para a área de transferência. Agora vá em qualquer campo de texto e dê um <strong>Ctrl + V</strong> para colar.</p>
+
+<p><img src="https://i.imgur.com/hrugD39.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Como pôde observar, o extrator de texto conseguiu realizar a tarefa com sucesso.
+Notamos que ele não performa bem em textos com a fonte na cor branca, então deixo um exercício para você descobrir até aonde o <strong>Extrator de texto</strong> é implacável ou deixa de ser.</p>
+
+<h3 id="video-conferência-mudo">Video Conferência Mudo</h3>
+
+<p><img src="https://i.imgur.com/AIaTp8J.png" alt="" class="mx-auto d-block" /></p>
+
+<p>Para aqueles momentos onde você está em videoconferências e seu dia está agitado, e simplesmente não tem tempo de procurar o botão de mutar ou desligar a webcam quado precisa desfocar a atenção da call, esta ferramenta facilita este trabalho para você.
+Basta entrar com a combinação de teclas <strong>Win + Shift + Q</strong> que a sua webcam e seu microfone será interrompido, independente do contexto que estiver.
+É uma ótima ferramenta quando o assunto é agilidade e eficácia.</p>
+
+<h2 id="considerações-finais">Considerações finais</h2>
+
+<p>É importante notar que muita destas ferramentas são, ou foram inspiradas em ferramentas já existentes para resolver estes problemas típicos do dia a dia. É interessante ver o reconhecimento que a Microsoft mostra aos desenvolvedores que sempre estiveram à frente de seus tempos, disponibilizando ferramentas gratuitas como estas, que, algumas delas, puderam ter o tido o privilégio de ter sido catalogado pela Microsoft para fazer parte do Windows, com os outros programas nativos do Sistema Operacional.</p>
+
+
+      </article>
+
+      
+        <div class="blog-tags">
+          <span>Tags:</span>
+          
+            <a href="/articles/tags#books">books</a>
+          
+            <a href="/articles/tags#test">test</a>
+          
+        </div>
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Compartilhar: </span>
+
+  
+    <a href="https://twitter.com/intent/tweet?text=Microsoft+PowerToys&url=%2Farticles%2F2023-04-26-Microsoft-PowerToys%2F"
+      class="btn btn-social-icon btn-twitter" title="Compartilhar no Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2Farticles%2F2023-04-26-Microsoft-PowerToys%2F"
+      class="btn btn-social-icon btn-facebook" title="Compartilhar no Facebook">
+      <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=%2Farticles%2F2023-04-26-Microsoft-PowerToys%2F"
+      class="btn btn-social-icon btn-linkedin" title="Compartilhar no LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+  
+
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pagination blog-pager">
+        
+        
+      </ul>
+      
+  <div class="disqus-comments">
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+	  var disqus_shortname = 'R4wd0G';
+	  /* ensure that pages with query string get the same discussion */
+	  var url_parts = window.location.href.split("?");
+	  var disqus_url = url_parts[0];
+	  (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	  })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</div>
+  
+  
+
+  
+
+
+  
+
+  
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="mailto:wpa.sys@hotmail.com" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/r4wd0g" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://linkedin.com/in/gustavo-sousa-a2b06ba1" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://stackoverflow.com/users/11725446/r4wd0g" title="StackOverflow">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">StackOverflow</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://discord.com/users/469087175431028737" title="Discord">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Discord</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Gustavo Sousa
+        &nbsp;&bull;&nbsp;
+      
+      2023
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="/articles">rawarticles.me</a>
+        </span>
+      
+
+      
+
+      
+
+      <!-- </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/articles/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
