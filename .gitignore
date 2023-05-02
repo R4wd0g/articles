@@ -1,7 +1,6 @@
-*
+**/*
 !.gitignore
-!_site/
-_site/*.*
+!_site
 
 
 
